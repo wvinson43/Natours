@@ -4,6 +4,14 @@ const Booking = require('../models/bookingModel');
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
 
+exports.alerts = (req, res, next) => {
+  const { alert } = req.query;
+  if (alert === 'booking')
+    res.locals.alert =
+      "Your booking was successful! Please check your email for a confirmation. If your booking doesn't show up here immediatly, please come back later.";
+  next();
+};
+
 exports.getOverview = catchAsync(async (req, res, next) => {
   // 1) Get tour data from collection
   const tours = await Tour.find();
@@ -30,9 +38,6 @@ exports.getTour = catchAsync(async (req, res, next) => {
 
   // 3) Render template using data from 1)
 
-  if (!tour) {
-    return next(new AppError('There is no tour with that name', 404));
-  }
   res
     .status(200)
     .set(
