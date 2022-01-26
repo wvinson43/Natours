@@ -1,6 +1,7 @@
 Natours
 
 Description
+
 This project is an app that allows the user to browse through some fictional travel tours, book a fictional tour, hypothetically purchase a tour after booking and then access booked and purchased tours.  There are access points set up for admin and users.  It was constructed using nodejs with an express framework.  The information is stored and crud operations are accessible using MongoDB, Mongoose, and PostMan.  Testing was carried out with Postman.  Emails for confirmiing userdata and purchases was accomplished using sendgrid and nodemailer.  Stripe was utilized for creating transactions and testing transaction security in real-time.
 
 Installation
