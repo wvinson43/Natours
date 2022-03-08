@@ -16,4 +16,4 @@ Testing
 There are currently no test suites for this application.  However, Postman could certainly be used to test it if needed.
 
 Questions
-Please see my github: wvinson43 You can ask me questions here: wesleyclayvinson2016@gmail.com
+Please see my github: wvinson43 You can ask me questions here: wesleyvinson2016@yahoo.com
